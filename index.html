@@ -5,11 +5,17 @@
     <link rel="icon" type="image/svg+xml" href="/framy-demo/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
     <title>Framy</title>
-    <script type="module" crossorigin src="/framy-demo/assets/index-DIp8qS_Y.js"></script>
+    <script type="module" crossorigin src="/framy-demo/assets/index-DPcNQnnw.js"></script>
     <link rel="stylesheet" crossorigin href="/framy-demo/assets/index-CKVuhnwq.css">
   </head>
   <body>
     <div id="root"></div>
+    <div id="demo-note" style="position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;padding:24px;background:rgba(0,0,0,0.5);">
+      <div style="max-width:300px;background:#fff;border-radius:16px;padding:24px 20px;text-align:center;font:14px/1.5 -apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif;color:#1b1b1b;box-shadow:0 12px 40px rgba(0,0,0,0.25);">
+        <p style="margin:0 0 18px;">This is a demo site.<br>Some features are limited.</p>
+        <button onclick="document.getElementById('demo-note').remove()" style="background:#1b1b1b;color:#fff;border:none;border-radius:999px;padding:9px 28px;font:inherit;cursor:pointer;">OK</button>
+      </div>
+    </div>
     <div id="ar-note" style="position:fixed;left:0;right:0;bottom:0;z-index:99999;display:flex;align-items:center;justify-content:center;gap:10px;padding:10px 16px;padding-bottom:calc(10px + env(safe-area-inset-bottom, 0px));background:rgba(27,27,27,0.88);color:#fff;font:13px/1.4 -apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif;text-align:center;">
       <span>For the AR view (seeing it on your wall), please open this page in Safari.</span>
       <button onclick="document.getElementById('ar-note').remove()" style="flex:none;background:none;border:none;color:#fff;opacity:0.7;font-size:16px;line-height:1;padding:4px;cursor:pointer;">&times;</button>
