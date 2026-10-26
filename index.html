@@ -4,11 +4,15 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/framy-demo/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-    <title>fRME</title>
+    <title>Framy</title>
     <script type="module" crossorigin src="/framy-demo/assets/index-D6woJQll.js"></script>
     <link rel="stylesheet" crossorigin href="/framy-demo/assets/index-B3yhyMq1.css">
   </head>
   <body>
     <div id="root"></div>
+    <div id="ar-note" style="position:fixed;left:0;right:0;bottom:0;z-index:99999;display:flex;align-items:center;justify-content:center;gap:10px;padding:10px 16px;padding-bottom:calc(10px + env(safe-area-inset-bottom, 0px));background:rgba(27,27,27,0.88);color:#fff;font:13px/1.4 -apple-system,BlinkMacSystemFont,'Helvetica Neue',sans-serif;text-align:center;">
+      <span>For the AR view (seeing it on your wall), please open this page in Safari.</span>
+      <button onclick="document.getElementById('ar-note').remove()" style="flex:none;background:none;border:none;color:#fff;opacity:0.7;font-size:16px;line-height:1;padding:4px;cursor:pointer;">&times;</button>
+    </div>
   </body>
 </html>
